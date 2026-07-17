@@ -1,6 +1,6 @@
 ---
-layout: post
-title: "Writing Samples"
+layout: default
+title: Writing Samples
 permalink: /pages/writing/
 ---
 
