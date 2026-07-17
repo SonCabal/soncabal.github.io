@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Creative Writing"
-permalink: /creative/
+permalink: /pages/writing/creative/
 ---
 
 *Creative writing examples*
