@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="he" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="שיפודי הטאבון, מסעדת בשרים בהוד השרון. מבוא קדם 5. בשרים על האש, שיפודים, תפריט ילדים ומשלוחים.">
+  <title>שיפודי הטאבון | הוד השרון</title>
+  <link rel="icon" type="image/jpeg" href="1.jpeg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <style>
+    :root { --dark:#18120d; --dark2:#292018; --gold:#efb65d; --cream:#fffaf3; --paper:#f5eee4; --ink:#29221c; --muted:#70665d; }
+    * { box-sizing:border-box; }
+    html { scroll-behavior:smooth; scroll-padding-top:85px; }
+    body { margin:0; font-family:Heebo,Arial,sans-serif; background:var(--cream); color:var(--ink); }
+    a { text-decoration:none; color:inherit; }
+    button { font:inherit; cursor:pointer; }
+    img { display:block; max-width:100%; }
+    .container { width:min(1160px,calc(100% - 36px)); margin:auto; }
+    .btn { display:inline-flex; justify-content:center; align-items:center; gap:8px; border:0; padding:13px 23px; border-radius:100px; background:var(--gold); color:#24180c; font-weight:800; transition:.2s; }
+    .btn:hover { transform:translateY(-2px); filter:brightness(1.05); }
+    .btn-outline { color:#fff; background:transparent; border:1px solid #ffffff70; }
+    .btn-dark { background:var(--dark); color:#fff; }
+    .btn-white { background:#fff; color:var(--dark); }
+    .site-header { background:#18120df7; color:#fff; position:sticky; top:0; z-index:20; border-bottom:1px solid #ffffff25; }
+    .header-inner { min-height:76px; display:flex; align-items:center; justify-content:space-between; gap:18px; }
+    .logo { font-size:1.5rem; font-weight:900; white-space:nowrap; }
+    .logo span { color:var(--gold); }
+    .nav-links { display:flex; gap:23px; align-items:center; }
+    .nav-links a { font-weight:600; color:#e9dfd3; }
+    .nav-links a:hover { color:var(--gold); }
+    .mobile-toggle { display:none; background:none; border:1px solid #ffffff60; color:#fff; border-radius:10px; padding:5px 12px; font-size:1.5rem; }
+    .hero { background:linear-gradient(130deg,#211811,#100e0c); color:#fff; padding:60px 0 75px; }
+    .hero-inner { display:grid; grid-template-columns:1fr 1fr; align-items:center; gap:55px; }
+    .eyebrow { color:#b97434; font-size:.95rem; letter-spacing:.04em; font-weight:800; margin:0 0 11px; }
+    .hero .eyebrow { color:var(--gold); }
+    h1 { font-size:clamp(3.3rem,6vw,5.8rem); margin:12px 0 18px; line-height:1.08; font-weight:900; }
+    h1 span { color:var(--gold); }
+    .hero p.desc { font-size:1.15rem; color:#e8d9c9; line-height:1.9; max-width:530px; }
+    .hero-buttons { display:flex; flex-wrap:wrap; gap:12px; margin-top:27px; }
+    .hero-info { margin-top:33px; color:#d7c2a8; font-size:.92rem; line-height:2; }
+    .hero-photo { width:100%; height:515px; object-fit:cover; border-radius:230px 230px 26px 26px; box-shadow:0 18px 65px #0008; border:1px solid #efb65d55; }
+    .features { background:#fff; border-bottom:1px solid #ebdfd1; }
+    .features-inner { display:grid; grid-template-columns:repeat(3,1fr); gap:20px; padding:25px 0; }
+    .feature { text-align:center; padding:9px; }
+    .feature strong { display:block; font-size:1.08rem; }
+    .feature small { color:var(--muted); }
+    section.content { padding:95px 0; }
+    .section-title { font-size:clamp(2.1rem,4vw,3.4rem); line-height:1.25; margin:0 0 15px; font-weight:900; }
+    .section-text { color:var(--muted); line-height:1.9; font-size:1.06rem; }
+    .about-grid { display:grid; grid-template-columns:1fr 1fr; align-items:center; gap:55px; }
+    .about-photo { height:430px; width:100%; object-fit:cover; border-radius:24px; }
+    .checks { padding:0; list-style:none; line-height:2.5; font-weight:700; }
+    .checks li::before { content:'✓'; color:#bd702f; margin-left:10px; }
+    .menu-section { background:var(--paper); }
+    .section-intro { max-width:720px; margin:0 0 30px; }
+    .cards { display:grid; grid-template-columns:repeat(4,1fr); gap:19px; }
+    .card { background:#fff; border-radius:19px; overflow:hidden; box-shadow:0 8px 30px #60412612; }
+    .card img { width:100%; height:205px; object-fit:cover; }
+    .card-content { padding:19px; }
+    .card h3 { margin:0 0 8px; font-size:1.2rem; }
+    .card p { margin:0; color:var(--muted); line-height:1.75; font-size:.95rem; }
+    .note { color:#766b60; font-size:.9rem; margin-top:22px; }
+    .gallery-grid { display:grid; grid-template-columns:repeat(5,1fr); gap:13px; margin-top:25px; }
+    .gallery-photo { border:0; padding:0; border-radius:17px; overflow:hidden; background:#dbcbb7; width:100%; aspect-ratio:1/1; position:relative; }
+    .gallery-photo img { height:100%; width:100%; object-fit:cover; transition:transform .3s; }
+    .gallery-photo:hover img { transform:scale(1.06); }
+    .gallery-photo::after { content:'⤢'; position:absolute; left:9px; bottom:9px; border-radius:50%; background:#21170ec9; color:white; width:32px; height:32px; display:grid; place-items:center; font-size:1.1rem; }
+    .gallery-hint { color:var(--muted); font-size:.95rem; }
+    .order { background:var(--dark); color:#fff; padding:75px 0; }
+    .order-inner { display:flex; align-items:center; justify-content:space-between; gap:35px; }
+    .order h2 { font-size:clamp(2rem,3.8vw,3.1rem); margin:0 0 10px; }
+    .order p { color:#decdb9; margin:0; }
+    .order-buttons { display:flex; gap:12px; flex-wrap:wrap; }
+    .contact-grid { display:grid; grid-template-columns:1fr 1.05fr; gap:50px; }
+    .detail { padding:16px 0; border-bottom:1px solid #e9dac9; }
+    .detail strong { display:block; margin-bottom:4px; }
+    .detail a { color:#a85f25; text-decoration:underline; }
+    .hours { margin-top:24px; padding:22px; border-radius:17px; background:var(--paper); }
+    .hours p { display:flex; justify-content:space-between; gap:20px; margin:8px 0; }
+    .map-wrap { overflow:hidden; background:#fff; border:1px solid #e5d7c7; border-radius:23px; box-shadow:0 8px 28px #0000000d; }
+    iframe { display:block; width:100%; height:390px; border:0; }
+    .map-actions { display:flex; gap:10px; justify-content:center; flex-wrap:wrap; padding:17px; }
+    footer { background:#120f0c; color:#e9dcd0; text-align:center; padding:38px 15px 100px; }
+    footer strong { color:var(--gold); font-size:1.4rem; }
+    footer p { margin:9px 0; font-size:.93rem; }
+    .mobile-actions { display:none; }
+    dialog { padding:0; border:0; background:transparent; max-width:min(1000px,95vw); max-height:95vh; }
+    dialog::backdrop { background:#080705ed; }
+    dialog img { max-height:83vh; max-width:90vw; object-fit:contain; border-radius:12px; }
+    .close-dialog { position:absolute; top:7px; left:7px; width:40px; height:40px; border:0; border-radius:50%; background:#fff; color:#111; font-size:25px; }
+    @media(max-width:850px) {
+      .nav-links { gap:12px; font-size:.88rem; }
+      .hero-inner, .about-grid, .contact-grid { gap:28px; }
+      .cards { grid-template-columns:repeat(2,1fr); }
+      .gallery-grid { grid-template-columns:repeat(3,1fr); }
+    }
+    @media(max-width:650px) {
+      .header-inner { min-height:68px; }
+      .logo { font-size:1.28rem; }
+      .mobile-toggle { display:block; }
+      .nav-links { display:none; position:absolute; top:68px; right:0; left:0; background:var(--dark2); padding:15px 22px; flex-direction:column; align-items:stretch; font-size:1rem; gap:0; }
+      .nav-links.open { display:flex; }
+      .nav-links a { padding:10px; border-bottom:1px solid #ffffff22; }
+      .header-call { display:none; }
+      .hero { padding:48px 0 65px; }
+      .hero-inner, .about-grid, .contact-grid { grid-template-columns:1fr; }
+      .hero-copy { text-align:center; }
+      .hero-buttons { justify-content:center; }
+      .hero-photo { height:360px; max-width:450px; margin:auto; }
+      .features-inner { grid-template-columns:1fr; gap:0; }
+      .feature { border-bottom:1px solid #eee2d6; }
+      section.content { padding:70px 0; }
+      .about-photo { height:300px; }
+      .about-grid > img { order:-1; }
+      .cards { gap:12px; }
+      .card img { height:150px; }
+      .card-content { padding:13px; }
+      .gallery-grid { grid-template-columns:repeat(2,1fr); gap:9px; }
+      .order-inner { display:block; }
+      .order-buttons { margin-top:23px; }
+      iframe { height:330px; }
+      .mobile-actions { position:fixed; bottom:0; right:0; left:0; z-index:18; display:flex; gap:9px; padding:10px 14px calc(10px + env(safe-area-inset-bottom)); background:#18120d; box-shadow:0 -5px 30px #0005; }
+      .mobile-actions a { flex:1; text-align:center; background:var(--gold); padding:11px 7px; border-radius:10px; font-weight:800; }
+      .mobile-actions a:last-child { background:#fff; }
+    }
+  </style>
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="logo" href="#top">🔥 שיפודי <span>הטאבון</span></a>
+      <nav class="nav-links" id="site-nav" aria-label="תפריט ניווט">
+        <a href="#about">עלינו</a>
+        <a href="#menu">התפריט</a>
+        <a href="#gallery">גלריה</a>
+        <a href="#order">משלוחים</a>
+        <a href="#contact">צור קשר</a>
+      </nav>
+      <a class="btn header-call" href="tel:099501501">☎ 09-950-1501</a>
+      <button class="mobile-toggle" id="menu-btn" type="button" aria-label="פתיחת תפריט" aria-expanded="false">☰</button>
+    </div>
+  </header>
+
+  <main id="top">
+    <section class="hero">
+      <div class="container hero-inner">
+        <div class="hero-copy">
+          <p class="eyebrow">שיפודי הטאבון • הוד השרון</p>
+          <h1>הטעם<br><span>מתחיל באש.</span></h1>
+          <p class="desc">שיפודים עסיסיים, בשרים על האש, סלטים ותוספות. מחכים לכם לחוויה טעימה, חמה ומשפחתית.</p>
+          <div class="hero-buttons">
+            <a class="btn" href="#menu">גלו את התפריט</a>
+            <a class="btn btn-outline" href="#contact">בואו לבקר</a>
+          </div>
+          <div class="hero-info">📍 מבוא קדם 5, הוד השרון<br>🕒 ראשון עד חמישי, 11:00 עד 23:00</div>
+        </div>
+        <!-- התמונה הראשית נמצאת לצד index.html -->
+        <img class="hero-photo" src="1.jpeg" alt="שיפודי הטאבון" fetchpriority="high">
+      </div>
+    </section>
+
+    <div class="features">
+      <div class="container features-inner">
+        <div class="feature"><strong>🔥 בשרים ושיפודים</strong><small>הטעם הישראלי האהוב</small></div>
+        <div class="feature"><strong>🪑 גם ישיבה בחוץ</strong><small>מקום להיפגש ולאכול יחד</small></div>
+        <div class="feature"><strong>👨‍👩‍👧 תפריט ילדים</strong><small>אפשרויות גם לאורחים הצעירים</small></div>
+      </div>
+    </div>
+
+    <section class="content" id="about">
+      <div class="container about-grid">
+        <div>
+          <p class="eyebrow">קצת עלינו</p>
+          <h2 class="section-title">בשר טוב, אנשים טובים, אווירה של בית.</h2>
+          <p class="section-text">בשיפודי הטאבון אנחנו אוהבים אוכל שנעשה באהבה, שיפודים מהגריל, סלטים צבעוניים וארוחות שמזמינות את כולם לשבת יחד.</p>
+          <ul class="checks">
+            <li>שיפודים ומנות בשרים על האש</li>
+            <li>פיתה, לאפה, צלחות ותוספות</li>
+            <li>ישיבה בחוץ ותפריט ילדים</li>
+          </ul>
+          <a class="btn btn-dark" href="tel:099501501">התקשרו למסעדה</a>
+        </div>
+        <img class="about-photo" src="6.jpeg" alt="שיפודי הטאבון, מבחר מנות" loading="lazy">
+      </div>
+    </section>
+
+    <section class="content menu-section" id="menu">
+      <div class="container">
+        <p class="eyebrow">מה אוכלים אצלנו?</p>
+        <h2 class="section-title">משהו טעים לכל אחד</h2>
+        <p class="section-text section-intro">מבחר בשרים, שיפודים, מנות בפיתה או בצלחת, סלטים ותוספות. לפרטי המנות והמחירים המעודכנים ניתן לעיין בתפריט המשלוחים.</p>
+        <div class="cards">
+          <article class="card"><img src="2.jpeg" alt="מנת שיפודים" loading="lazy"><div class="card-content"><h3>שיפודים על האש</h3><p>מבחר שיפודים מהגריל לארוחה עשירה וטעימה.</p></div></article>
+          <article class="card"><img src="3.jpeg" alt="מנות בשרים" loading="lazy"><div class="card-content"><h3>מנות בשרים</h3><p>בשרים ותוספות בארוחה שמתאימה לרעב שלכם.</p></div></article>
+          <article class="card"><img src="4.jpeg" alt="מנות בפיתה ובלאפה" loading="lazy"><div class="card-content"><h3>בפיתה או בלאפה</h3><p>כל הטעמים האהובים במנה שקל לקחת וליהנות ממנה.</p></div></article>
+          <article class="card"><img src="5.jpeg" alt="סלטים ותוספות" loading="lazy"><div class="card-content"><h3>סלטים ותוספות</h3><p>תוספות טעימות שמלוות כל ארוחה.</p></div></article>
+        </div>
+        <p class="note">התמונות להמחשה. פירוט המנות והמחירים לפי תפריט המסעדה המעודכן.</p>
+      </div>
+    </section>
+
+    <section class="content" id="gallery">
+      <div class="container">
+        <p class="eyebrow">תנו לתמונות לדבר</p>
+        <h2 class="section-title">גלריית התמונות שלנו</h2>
+        <p class="gallery-hint">לחצו על תמונה כדי לראות אותה בגודל מלא.</p>
+        <div class="gallery-grid">
+          <button class="gallery-photo" type="button"><img src="7.jpeg" alt="תמונה 7 מהמסעדה" loading="lazy"></button>
+          <button class="gallery-photo" type="button"><img src="8.jpeg" alt="תמונה 8 מהמסעדה" loading="lazy"></button>
+          <button class="gallery-photo" type="button"><img src="9.jpeg" alt="תמונה 9 מהמסעדה" loading="lazy"></button>
+          <button class="gallery-photo" type="button"><img src="10.jpeg" alt="תמונה 10 מהמסעדה" loading="lazy"></button>
+          <button class="gallery-photo" type="button"><img src="11.jpeg" alt="תמונה 11 מהמסעדה" loading="lazy"></button>
+        </div>
+      </div>
+    </section>
+
+    <section class="order" id="order">
+      <div class="container order-inner">
+        <div><p class="eyebrow">מזמינים ונהנים</p><h2>שיפודי הטאבון גם אצלכם בבית</h2><p>אפשר להזמין דרך וולט או תן ביס, בהתאם לאזור ולזמינות השירות.</p></div>
+        <div class="order-buttons">
+          <a class="btn" href="https://wolt.com/he/isr/hasharon/restaurant/shipudei-hatabun" target="_blank" rel="noopener noreferrer">הזמנה בוולט</a>
+          <a class="btn btn-white" href="https://www.10bis.co.il/" target="_blank" rel="noopener noreferrer">הזמנה בתן ביס</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="content" id="contact">
+      <div class="container contact-grid">
+        <div>
+          <p class="eyebrow">נשמח לראות אתכם</p>
+          <h2 class="section-title">צור קשר והגעה</h2>
+          <p class="section-text">בואו לאכול אצלנו או התקשרו לשאלות ולהזמנות.</p>
+          <div class="detail"><strong>📍 כתובת</strong>מבוא קדם 5, הוד השרון</div>
+          <div class="detail"><strong>☎ טלפון</strong><a href="tel:099501501" dir="ltr">09-950-1501</a></div>
+          <div class="hours">
+            <strong>🕒 שעות פעילות</strong>
+            <p><span>ראשון עד חמישי</span><strong>11:00 עד 23:00</strong></p>
+            <p><span>שישי</span><strong>סגור</strong></p>
+            <p><span>שבת</span><strong>סגור</strong></p>
+            <small>בחגים ייתכנו שינויים. מומלץ לוודא טלפונית.</small>
+          </div>
+        </div>
+        <div class="map-wrap">
+          <iframe title="מפת שיפודי הטאבון" src="https://www.google.com/maps?q=%D7%9E%D7%91%D7%95%D7%90%20%D7%A7%D7%93%D7%9D%205%2C%20%D7%94%D7%95%D7%93%20%D7%94%D7%A9%D7%A8%D7%95%D7%9F&output=embed" loading="lazy" allowfullscreen></iframe>
+          <div class="map-actions">
+            <a class="btn btn-dark" href="https://www.google.com/maps/search/?api=1&query=%D7%9E%D7%91%D7%95%D7%90%20%D7%A7%D7%93%D7%9D%205%20%D7%94%D7%95%D7%93%20%D7%94%D7%A9%D7%A8%D7%95%D7%9F" target="_blank" rel="noopener noreferrer">ניווט בגוגל מפות</a>
+            <a class="btn btn-dark" href="https://waze.com/ul?q=%D7%9E%D7%91%D7%95%D7%90%20%D7%A7%D7%93%D7%9D%205%20%D7%94%D7%95%D7%93%20%D7%94%D7%A9%D7%A8%D7%95%D7%9F&navigate=yes" target="_blank" rel="noopener noreferrer">ניווט ב־Waze</a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <strong>🔥 שיפודי הטאבון</strong>
+    <p>מבוא קדם 5, הוד השרון | 09-950-1501</p>
+    <p>© <span id="year"></span> שיפודי הטאבון. כל הזכויות שמורות.</p>
+  </footer>
+
+  <div class="mobile-actions">
+    <a href="tel:099501501">☎ התקשרו</a>
+    <a href="#contact">📍 איך מגיעים?</a>
+  </div>
+
+  <dialog id="photo-dialog" aria-label="תצוגת תמונה מלאה">
+    <button class="close-dialog" id="close-dialog" type="button" aria-label="סגירה">×</button>
+    <img id="dialog-image" src="1.jpeg" alt="">
+  </dialog>
+
+  <script>
+    // כל התמונות נמצאות באותה תיקייה שבה נמצא index.html
+    // השמות: 1.jpeg, 2.jpeg וכן הלאה עד 11.jpeg
+    document.getElementById('year').textContent = new Date().getFullYear();
+
+    const menuButton = document.getElementById('menu-btn');
+    const nav = document.getElementById('site-nav');
+    menuButton.addEventListener('click', () => {
+      const open = nav.classList.toggle('open');
+      menuButton.setAttribute('aria-expanded', String(open));
+    });
+    nav.querySelectorAll('a').forEach(link => {
+      link.addEventListener('click', () => {
+        nav.classList.remove('open');
+        menuButton.setAttribute('aria-expanded', 'false');
+      });
+    });
+
+    const dialog = document.getElementById('photo-dialog');
+    const dialogImage = document.getElementById('dialog-image');
+    document.querySelectorAll('.gallery-photo').forEach(button => {
+      button.addEventListener('click', () => {
+        const image = button.querySelector('img');
+        dialogImage.src = image.getAttribute('src');
+        dialogImage.alt = image.alt;
+        dialog.showModal();
+      });
+    });
+    document.getElementById('close-dialog').addEventListener('click', () => dialog.close());
+    dialog.addEventListener('click', event => { if (event.target === dialog) dialog.close(); });
+  </script>
+</body>
+</html>
